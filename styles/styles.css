@@ -1,6 +1,7 @@
-main {min-width: 500px;
+main {min-width: auto;
+    margin: auto;
 }
-aside {width: 20px; 
+aside {width: 450px; 
     margin: 1rem;
     border: 1px solid;
     padding: 1rem;
@@ -8,15 +9,24 @@ aside {width: 20px;
     color: aquamarine;
     text-align: center;
 }
-aside img {width: 200px;
+
+nav {background-color: aquamarine;padding: 10px;}
+
+nav a {color: white;display: inline;padding: 20px;}
+
+h1 {color: rgb(26, 145, 163);}
+
+aside img {width: 450px;
 height: auto;
 }
 
-main img {width: 150px;
+main img {width: 350px;
     height: auto;
 }
-p {padding: 0;
+
+p {padding: 10px;
 } 
+
 
 footer {margin-top: 15px;
 border-top: 1px solid #000;
