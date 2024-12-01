@@ -1,24 +1,96 @@
-primary-color; #BC6C25
+main {  
+    --primary-color: #766153;
+    --secondary-color: #EFF1ED;
+    --accent-color: #717744;
+    --accent2-color: #373D20;
+  }  
+  
+p {  
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 25px;
+  }  
+  
+main {  
+    color: var(--secondary-color); 
+    padding: 27px;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #373D20;
+    flex-direction: column;
+  }  
+  
+section {  
+    background-color: var(--accent2-color);
+    padding: 25px;
+    margin: 10px;
+    flex-basis: 50%;
+    border: 2px solid var(--accent-color);
+    color: #766153;
 
+  }
+nav {
+    background-color: var(--accent2-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-secondary-color; #606C38
-
-accent1-color; #DDA15E
-
-
-accent2-color; #FEFAE0
-
-https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25
-
+}
+  
+footer {  
+    color: var(--accent2-color);
+    padding: 30px;
+    margin: 3;
+    background-color: #717744;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
 h2 {
     font-family: "Tinos", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  h1 {
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.2;
+    color: #373D20;
+}
+
+h1 {
     font-family: "Tinos", serif;
     font-weight: 700;
     font-style: normal;
-  }
+    font-size: 35px;
+    text-align: center;
+
+}
+  .social-icon1 {color: darkgray;
+    font-size: 20px;
+    padding: 5px;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.social-icon2 {color: darkgray;
+    font-size: 20px;
+    padding: 5px;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.social-icon3 {color: darkgray;
+    font-size: 20px;
+    padding: 5px;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+https://coolors.co/palette/eff1ed-373d20-717744-bcbd8b-766153
+
+
+  
+  
   
