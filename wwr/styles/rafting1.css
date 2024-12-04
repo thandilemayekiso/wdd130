@@ -43,6 +43,7 @@ footer {
     color: #373D20;
     background-color: #EFF1ED;
     display: flexbox;
+
     
   }
 h2 {
@@ -80,6 +81,7 @@ div {display: -webkit-inline-flex;
     text-align: wrap;
     border-radius: 10px;
     border-radius: 5px;
+    border: 1px solid var(--accent-color);
 }
 
 .social-icon1 {color: darkgray;
