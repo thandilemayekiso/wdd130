@@ -99,3 +99,110 @@ section {
 section h2 {
   color: var(--primary-color);
 }
+
+/* Header layout with CSS Grid */
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--primary-color);
+}
+
+header img {
+  width: 100px; /* Adjust size */
+  height: auto;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+.history {
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--accent-color);
+}
+
+.history h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.history p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+.adventures {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.adventures figure {
+  margin: 0;
+  text-align: center;
+}
+
+.adventures img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.adventures figcaption {
+  margin-top: 5px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .sociallinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+footer .sociallinks a {
+  text-decoration: none;
+}
+
+footer .sociallinks img {
+  width: 30px;
+  height: 30px;
+  filter: invert(100%);
+}
