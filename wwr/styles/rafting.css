@@ -1,194 +1,101 @@
-main {  
-    --primary-color: #766153;
-    --secondary-color: #EFF1ED;
-    --accent-color: #717744;
-    --accent2-color: #373D20;
-}  
+/* Define root variables for the color scheme */
+:root {
+  --primary-color: #005f56;
+  --secondary-color: #ff7f32;
+  --accent-color: #f1f1f1;
+  --text-color: #333;
+  --link-color: #005f56;
+}
 
-.hero img {display: flex;
-  height: auto;
-  padding: 10px;
+/* General page styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: 'Merriweather', serif;
+}
+
+header {
   background-color: var(--primary-color);
-  border-radius: 100%;
-  border: 10px solid var(--accent-color);
-  border-radius: 50%;}
-
-header {display: flexbox;
-  text-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  inset-inline-start: var(--secondary-color);
-  background-color: #41210b;
-  padding: 10px;
-  display: flex;
-}
-p {  
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    font-size: 25px;
-
-
-  }  
-  
-main {  
-    color: #717744; 
-    padding: 27px;
-    margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    background-color: #373D20;
-    flex-direction: column;
-  }  
-  
-section {  
-    background-color: #EFF1ED;
-    padding: 25px;
-    margin: 10px;
-    flex-basis: 50%;
-    border: 10px solid var(--accent-color);
-    color: #373D20;
-
-  }
-nav {display: flex;
-    display: flexbox;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items:normal;
-    align-items: center;
-}
-  
-footer {
-    color: #EFF1ED;
-    background-color: #373D20;
-    display: flexbox;
-  justify-content: space-between;}
-h2 {display: block;
-    font-family: "Tinos", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    text-align: center;
-    line-height: 1.3;
-    color: #717744;
-    background-color: #373D20;
-}
-
-h1 {
-    font-family: "Tinos", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 35px;
-    text-align: center;
-}
-h3 {font-family: "Tinos", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 35px;
-    color: #EFF1ED;
-}
-div {display: -webkit-inline-flex;
-    display: flexbox;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    font-size: 20px;
-    text-align: wrap;
-    border-radius: 10px;
-    border-radius: 5px;
-    border: 1px solid var(--accent-color);
-}
-/* Style the map iframe */  
-.map iframe {  
-  width: 100%;  
-  height: 300px; /* Adjust height as needed */  
-  border: 1px solid #ccc; /* Optional border */  
-
-}  
-.employees {  
-  display: flex; /* Or grid, depending on your layout */  
-  justify-content: space-around;
-  align-items: center;  
-}  
-
-.employee {  
-  text-align: center;  
-  margin: 1em;  
-}  
-
-.contact-form form {  
-  width: 50%; /* Or adjust as needed */  
-  margin: 0 auto;  
-  padding: 10px;
-  border: 1px solid #ccc;
-}  
-
-/* ... other styles for labels, inputs, buttons, etc. ... */
-
-
-/* Other styles for headings, paragraphs, etc. */
-.social-icon1 {color: darkgray;
-    font-size: 20px;
-    padding: 5px;
-    transition: color 0.3s ease-in-out;
-    text-decoration: none;
-}
-
-.social-icon2 {color: darkgray;
-    font-size: 20px;
-    padding: 5px;
-    transition: color 0.3s ease-in-out;
-    text-decoration: none;
-}
-
-.social-icon3 {color: darkgray;
-    font-size: 20px;
-    padding: 5px;
-    transition: color 0.3s ease-in-out;
-    text-decoration: none;
-}
-.flexbox-container {display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  
-}
-.container {
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-gap: 20px;
-  background-color: var(--secondary-color);
   padding: 20px;
-  margin: 10px;
-  border: 2px solid var(--accent-color);
-  color: #766153;
+  color: white;
+  text-align: center;
 }
-https://coolors.co/palette/eff1ed-373d20-717744-bcbd8b-766153
 
+/* Hero section */
+.hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
 
-  
-  
-  
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
-  
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 3rem;
+}
 
+.hero article {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: white;
+  width: 300px;
+}
 
+.hero article img {
+  float: right;
+  margin-left: 20px;
+  width: 100px;
+  height: auto;
+}
 
+/* Footer styling */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
+footer p {
+  margin: 0;
+}
 
+.sociallinks a {
+  margin: 0 10px;
+}
 
+.sociallinks img {
+  width: 30px;
+  height: 30px;
+  filter: invert(100%);
+}
 
+/* Remove underline from social media links */
+.sociallinks a {
+  text-decoration: none;
+}
 
+/* Styling for sections */
+section {
+  margin: 20px;
+}
 
-
-
-
-
-
-
-
+section h2 {
+  color: var(--primary-color);
+}
