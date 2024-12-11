@@ -1,128 +1,156 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <meta name="description" content="Get in touch with Rafting Adventure. Contact information, email, and Adress.">
-    <meta name="author" content="Thandile Mayekiso">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name="description" content="Explore thrilling rafting adventures. Book your next river adventure today!">
+    <title>Home | Rafting Company</title>
+    <link rel="stylesheet" href="rafting.css">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
+    <!-- Header & Navigation (use the same header/navigation as other pages) -->
     <header>
-        <div>
-        <img src="images/rafting.jpg" alt="Company Rafting Logo" width="200">
-            <nav>
-            <a href="index.html">Home</a>
-            <a href="#">About us</a>
-            <a href="#">Trips</a>
-            <a href="#">Contact us</a>
-            </nav>
-        </div>
+        <div class="logo"><img src="images/rafting.jpg" alt="Rafting Company Logo"></div>
+        <h1>Rafting Adventures</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
+    <!-- Trip Listings -->
+    <section class="trips">
+        <h2>Our Exciting Trips</h2>
+        <div class="trip-list">
+            <div class="trip">
+                <img src="images/raf1.jpg" alt="Trip 1">
+                <h3>Big Rafting Adventure</h3>
+                <p>A thrilling experience through challenging rapids.</p>
+                <a href="trip-details.html" class="cta-button">Learn More</a>
+            </div>
+            <div class="trip">
+                <img src="images/raf2.jpg" alt="Trip 2">
+                <h3>Half Day Adventure</h3>
+                <p>Perfect for first-time rafters or those with limited time.</p>
+                <a href="trip-details.html" class="cta-button">Learn More</a>
+            </div>
+            <!-- More trips here -->
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/whitewater.jpg" alt="Rafting Adventure" class="hero-img">
+        <div class="hero-content">
+            <h2>Embark on the Adventure of a Lifetime</h2>
+            <p>Challenge yourself with an unforgettable rafting adventure!</p>
+            <a href="trips.html" class="cta-button">Book Your Adventure Now</a>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Stay Updated!</h2>
+        <p>Sign up for our newsletter to get the latest rafting news and offers.</p>
+        <form action="subscribe.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+</body>
     <main>
         <div class="hero">
-            <img src="images/Whitewater.jpg" alt="Rafting Adventure" width=700>
-            <h1>Rafting Adventure</h1>
-            <p>Welcome to the world of whitewater rafting. This adventure is for everyone from beginners to experienced rafters. Enjoy your adventure and have fun while learning about the beautiful South African waters.</p>
-            <h2>history</h2>
+            <img src="images/hero1.jpg" alt="Rafting Adventure">
+            <h1>Rafting Company Name</h1>
             <article>
-                <img src="images/hero1.jpg" alt="A Happy Rafting Client" width="350">
-                <p>The history of whitewater rafting dates back to the 16th century. It's a unique and exciting adventure that combines the thrill of riding a boat with the beautiful waters of South Africa.</p>
+                <img src="images/hero.jpg" alt="Happy Client">
+                <p>Our mission is to provide thrilling rafting adventures for all skill levels. Join us for the adventure of a lifetime!</p>
             </article>
-        </div>
+        </div> 
+        <!-- Company Information Section -->
+    <section class="company-info">
+        <h2>Contact Information</h2>
+        <p>Address: 1854 NU 1, Mdantsane, South Africa</p>
+        <p>Phone: +27710912259</p>
+        <p>Email: rafting@gmail.com</p>
 
-        <section class="history-section">
-            <div class="history-content">
-                <h2>history</h2>
-                <p>Whitewater rafting has its roots in the 16th century when English settlers sailed on the Grand Banks of the North Sea. The first whitewater rafting trip took place in 1630. Over the next few decades, the adventure grew in popularity and became an important part of the English folklore and culture.</p>
-                <img src="images/raf.jpg" alt="History Image" class="history-image">
-                <p>Today, whitewater rafting is a popular activity that brings people together and offers a unique and exciting adventure. It's a great way to connect with friends, family, and even the local community. With so many amazing whitewater rafting trips happening around the world, it's essential to enjoy this amazing experience.</p>
+        <!-- Google Map Embed -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" frameborder="0" style="border:0;"></iframe>
+        </div>
+    </section>
+
+    <!-- Employee Profile Section -->
+    <section class="employees">
+        <h2>Meet Our Team</h2>
+        <div class="employee">
+            <img src="images/employee1.jpg" alt="Employee 1">
+            <figcaption>John Doe - River Guide</figcaption>
+        </div>
+        <div class="employee">
+            <img src="images/employee2.jpg" alt="Employee 2">
+            <figcaption>Jane Smith - Safety Officer</figcaption>
+        </div>
+        <div class="employee">
+            <img src="images/employee3.jpg" alt="Employee 3">
+            <figcaption>Mark Lee - Operations Manager</figcaption>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="inquiry">Purpose of Your Message</label>
+            <div class="radio-group">
+                <input type="radio" id="general" name="inquiry" value="General Inquiry">
+                <label for="general">General Inquiry</label>
+                <input type="radio" id="reservation" name="inquiry" value="Reservation Question">
+                <label for="reservation">Reservation Question</label>
+                <input type="radio" id="suggestion" name="inquiry" value="Website Suggestion">
+                <label for="suggestion">Website Suggestion</label>
             </div>
-        </section>       
-        <section class="adventure-section">
-            <figure>
-                <img src="images/raf1.jpg" alt="Raft scenary" width="350">
-                <figcaption>Business outings</figcaption>
-            </figure>
-            <figure>
-                <img src="images/raf2.jpg" alt="Crazy beautiful trails" width="350">
-                <figcaption>Amazing sights</figcaption>
-            </figure>
-            <figure>
-                <img src="images/raf3.jpg" alt="Half Day Adventure" width="350">
-                <figcaption>Family bonding</figcaption>
-            </figure>
-            <figure>
-                <img src="images/hero.jpg" alt="Whitewater Thrill" width="350">
-                <figcaption>Whitewater Thrill</figcaption>
-            </figure>
-            <figure>
-                <img src="images/raf5.jpg" alt="Rafting Expedition"width="350" >
-                <figcaption>Rafting Expedition</figcaption>
-            </figure>
-        </section>  
-        <h1>Contact Us</h1>  
-        <section class="contact-info">  
-          <p><strong>Address:</strong> 2854 NU 1, Mdantsane, East London</p>  
-          <p><strong>Phone:</strong> (+27)71 0912259</p>  
-          <p><strong>Email:</strong> thandile.mayekiso16@gmail.com</p>  
-        </section>  
-    
-        <section class="map">  
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31850.69816092823!2d27.
-            78882297009789!3d-32.95385439639614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1733600862887!5m2!1sen!2sza" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-        </section>  
-    
-        <section class="contact-form">  
-          <!--  Contact form (using HTML forms or a JavaScript library) -->  
-        </section> 
-        <section class="contact-form">  
-            <h2>Send Us a Message</h2>  
-            <form>  
-              <label for="name">Name:</label>  
-              <input type="text" id="name" name="name" required><br><br>  
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label for="subscribe">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                Please subscribe me to the monthly newsletter
+            </label>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
       
-              <label for="email">Email:</label>  
-              <input type="email" id="email" name="email" required><br><br>  
-      
-              <label>Purpose:</label><br>  
-              <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>  
-              <label for="inquiry">General Inquiry</label><br>  
-              <input type="radio" id="reservation" name="purpose" value="Reservation Question">  
-              <label for="reservation">Reservation Question</label><br>  
-              <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">  
-              <label for="suggestion">Website Suggestion</label><br><br>  
-      
-              <label for="message">Message:</label><br>  
-              <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>  
-      
-              <input type="checkbox" id="newsletter" name="newsletter">  
-              <label for="newsletter">Please subscribe me to the monthly newsletter</label><br><br>  
-      
-              <input type="submit" value="Submit Message">  
-            </form>  
-          </section>      
     </main>
     <footer>
-        <p>& copy; 2024 Rafting Adventures. All rights reserved.</p>
-        <nav class="sociallinks">
-            <a href="https://facebook.com">
-                <img src="images/facebook.webp" alt="Facebook">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.webp" alt="Twitter">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.webp" alt="Instagram">
-            </a>
-        </nav>
-    </footer>
+      <p>&copy; 2024 Rafting Company. All Rights Reserved.</p>
+      <a href="contact.html">Contact Us</a>
+      <a href="contact-wireframe.png" target="_blank">View Contact Us Wireframe</a>
+      <nav class="sociallinks">
+          <a href="https://facebook.com">
+              <img src="images/facebook.svg" alt="Facebook">
+          </a>
+          <a href="https://twitter.com">
+              <img src="images/twitter.svg" alt="Twitter">
+          </a>
+          <a href="https://instagram.com">
+              <img src="images/instagram.svg" alt="Instagram">
+          </a>
+      </nav>
+  </footer>
+  
 </body>
 </html>

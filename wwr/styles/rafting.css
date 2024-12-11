@@ -71,93 +71,171 @@ footer {
   padding: 20px;
   text-align: center;
 }
-
-footer p {
-  margin: 0;
+/* Trips Section */
+.trips {
+  padding: 40px;
+  text-align: center;
 }
 
-.sociallinks a {
-  margin: 0 10px;
-}
-
-.sociallinks img {
-  width: 30px;
-  height: 30px;
-  filter: invert(100%);
-}
-
-/* Remove underline from social media links */
-.sociallinks a {
-  text-decoration: none;
-}
-
-/* Styling for sections */
-section {
-  margin: 20px;
-}
-
-section h2 {
-  color: var(--primary-color);
-}
-
-/* Header layout with CSS Grid */
-header {
+.trip-list {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  align-items: center;
-  padding: 20px;
-  background-color: var(--primary-color);
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
-header img {
-  width: 100px; /* Adjust size */
+.trip img {
+  width: 100%;
   height: auto;
 }
 
-header h1 {
-  text-align: center;
-  font-size: 2rem;
-  color: white;
+.trip h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.trip p {
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
 
-nav ul li {
-  margin: 0;
-}
-
-nav ul li a {
+.cta-button {
+  background-color: #ff4500;
+  padding: 10px 20px;
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
-  padding: 10px;
-}
-
-nav ul li a:hover {
-  background-color: var(--secondary-color);
   border-radius: 5px;
 }
-.history {
+/* Hero Section */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 60px;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  padding-left: 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.cta-button {
+  background-color: #ff4500;
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background-color: #f4f4f4;
+  padding: 40px;
+  text-align: center;
+}
+
+.newsletter input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+/* General styling for Contact Us page */
+.company-info, .employees, .contact-form {
   margin: 20px;
   padding: 20px;
-  background-color: var(--accent-color);
+  background-color: var(--light-gray);
 }
 
-.history h2 {
-  font-size: 1.8rem;
-  color: var(--primary-color);
+.company-info iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
 }
 
-.history p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: var(--text-color);
+.employee {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+.employee img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Radio buttons styling */
+.radio-group input {
+  margin-right: 5px;
+}
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .sociallinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+footer .sociallinks a {
+  text-decoration: none;
+}
+
+footer .sociallinks img {
+  width: 30px;
+  height: 30px;
+  filter: invert(100%);
+  transition: filter 0.2s;
 }
 .adventures {
   display: grid;
@@ -183,26 +261,51 @@ nav ul li a:hover {
   font-weight: bold;
   color: var(--primary-color);
 }
-footer {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 20px;
+/* Social Media Section */
+.social-media {
   text-align: center;
+  padding: 20px 0;
 }
 
-footer .sociallinks {
+.social-media ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-top: 10px;
 }
 
-footer .sociallinks a {
-  text-decoration: none;
+.social-media li {
+  margin: 0 15px;
 }
 
-footer .sociallinks img {
-  width: 30px;
-  height: 30px;
-  filter: invert(100%);
+.social-media img {
+  width: 40px;  /* Size of the icons */
+  height: 40px;
+  transition: transform 0.3s ease;  /* Smooth scale effect */
+}
+
+.social-media img:hover {
+  transform: scale(1.1);  /* Slightly enlarge on hover */
+}
+
+/* Optional: Add specific styles for individual icons */
+.social-media img.facebook-icon {
+  filter: grayscale(100%);
+}
+
+.social-media img.twitter-icon {
+  filter: grayscale(100%);
+}
+
+.social-media img.instagram-icon {
+  filter: grayscale(100%);
+}
+
+.social-media img.linkedin-icon {
+  filter: grayscale(100%);
+}
+
+.social-media img:hover {
+  filter: grayscale(0%);
 }
